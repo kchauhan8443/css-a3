@@ -1,0 +1,150 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+@import url(https://fonts.google.com/?query=serif+s&selection.family=PT+Serif);
+
+
+
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+  font-family: 'PT Serif', serif;
+  font-size: 10px;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+  font-size: 14px;
+}
+
+nav {
+  float: left;
+  width: 20%;
+  font-size: 16px;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+@font-face { font-family: roboto-regular;
+			 src: url('../font/Roboto-Regular.ttf');
+     }
+h1,h2{
+  font-family: 'Roboto-Regular', sans-serif;
+letter-spacing: 2px;
+}
+h1{
+  text-align: center;
+}
+section p{
+  text-indent: 20px;
+}
+a{
+  outline: none;
+  text-decoration: underline;
+  padding: 2px 1px 0;
+
+
+}
+
+a:link {
+color: red;
+
+}
+
+a:visited {
+color: #437A16;
+}
+
+a:focus {
+  border-bottom: 1px solid;
+    background: #BAE498;
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover {
+  border-bottom: 1px solid;
+    background: #CDFEAA;
+    text-decoration: none;
+}
+
+a:active {
+  background: #265301;
+    color: blue;
+}
+.icon{
+  background-image: url(https://mdn.github.io/learning-area/css/styling-text/typesetting-a-homepage-start/external-link-52.png);
+  background-size: 18px;
+  margin: auto;
+  padding:8px;
+  background-repeat: no-repeat;
+
+}
+
+li{
+  line-height: 1.5em;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+
+}
+
+aside ul{
+  list-style-type: upper-roman;
+}
+
+nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  border: 1px solid #555;
+}
+
+nav ul li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-align: center;
+  border-bottom: 1px solid #555;
+}
+
+/* Change the link color on hover */
+nav ul li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+nav ul li:last-child {
+  border-bottom: none;
+}
